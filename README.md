@@ -1,5 +1,5 @@
 
-# Naver Smart Store Product Details Page Crawler
+# Naver Smartstore Product Details Page Crawler
 
 This crawler saves the detailed product information page as an image when you press the "Explore detailed information" button on the Naver Smart Store product page. During the project, we used selenium for product page crawling, tkinter for GUI, and [Selenium-Screenshot](https://pypi.org/project/Selenium-Screenshot/) module for full screen capture.
 
