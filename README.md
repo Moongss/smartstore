@@ -13,8 +13,8 @@
 4. **경로저장**: `찾아보기` 버튼을 눌러 사진 저장폴더를 먼저 지정합니다.
 5. **URL설정**: **https://** 로 시작하는 상품 페이지 주소를 붙여 넣으면 됩니다.
    ```
-   Good Example: ``https://smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}``
-   Bad Example: ``smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}``
+   Good Example: https://smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}
+   Bad Example: smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}
    ```
 6. `캡처` 버튼을 누르면 실행됩니다.
    * 결과는 `{SELLER_ID}_{PRODUCT_ID}.jpg`로 저장됩니다.
