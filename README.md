@@ -1,4 +1,3 @@
-
 # 네이버 스마트스토어 상품 상세페이지 크롤러
 
 네이버 스마트스토어 상품 페이지의 "상세 정보 펼쳐보기" 버튼을 누를시 나오는 자세한 상품정보 페이지를 이미지로 저장하는 크롤러입니다. 해당 프로젝트를 진행하며 상품 페이지 크롤링을 위해 selenium, GUI를 위해 tkinter, 전체 화면 캡처를 위해 [Selenium-Screenshot](https://pypi.org/project/Selenium-Screenshot/) 모듈을 사용했습니다.
