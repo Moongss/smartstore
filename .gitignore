@@ -1,0 +1,7 @@
+test.py
+test.txt
+tmp/
+dist/
+chromedriver.exe
+build/
+*.spec
