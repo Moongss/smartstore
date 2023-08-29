@@ -58,7 +58,10 @@ class ScreenShot():
 
         ## new
         self.opt.add_argument('--headless')
+        self.opt.add_argument('--no-sandbox')
+        self.opt.add_argument('--disable-gpu')
         self.opt.add_argument('--start-maximized')
+        self.opt.add_experimental_option("excludeSwitches", ["enable-automation"])
         self.opt.add_experimental_option('excludeSwitches', ['enable-logging'])
 
         if getattr(sys, 'frozen', False):
@@ -167,6 +170,7 @@ class ScreenShot():
         goods_page = Image.open('./screenshot.png')
         
         margin = int(self.img_size['width'] - 860) / 2 #img size 680px
+        margin = 0 #to bro
         left = self.img_location['x']
         top = self.img_location['y']
         right = self.img_location['x'] + self.img_size['width']

@@ -2,5 +2,6 @@ test.py
 test.txt
 tmp/
 dist/
+dist.zip
 build/
 *.spec
