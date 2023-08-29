@@ -13,8 +13,10 @@ This crawler saves the detailed product information page as an image when you pr
 3. Go to the `dist` folder and run `smartstore.exe`.
 4. **Save Path**: Click the 'Browse' button to specify the Save Picture folder first.
 5. **URL Settings**: Paste the product page address that starts with **https://**.
-   > Good Example: ``https://smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}``
-   > Bad Example: ``smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}``
+   ```
+   Good Example: https://smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}
+   Bad Example: smartstore.naver.com/{SELLER_ID}/products/{PRODUCT_ID}
+   ```
 6. It is executed by pressing the `Capture` button.
    * The results are saved as `{SELLER_ID}_{PRODUCT_ID}.jpg`.
    * Automatically opens the folder where the program is stored!
