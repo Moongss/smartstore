@@ -4,7 +4,7 @@
 This crawler saves the detailed product information page as an image when you press the "Explore detailed information" button on the Naver Smart Store product page. During the project, we used selenium for product page crawling, tkinter for GUI, and [Selenium-Screenshot](https://pypi.org/project/Selenium-Screenshot/) module for full screen capture.
 
 ### How to use it
-1. Download this project.
+1. Clone this project.
 2. Enter the command below in the shell.
    ```sh
    pyinstaller.exe -F -n=smartstore --add-binary "chromedriver.exe;." \
@@ -70,7 +70,7 @@ Please add features or leave PR if you have any new bugs.
    ㄴutil/
       ㄴlogo.ico
    ```
-
+3. NoSuchDriverException 문구가 뜬 경우, chromedriver를 설치해주시기 바랍니다.
 
 ### 문의사항
 
