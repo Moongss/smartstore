@@ -51,6 +51,7 @@ class ScreenShot():
 
         self.num = 1
         self.num2 = 1
+        self.find_flag = False
 
         self.img_location = None
         self.img_size = None
@@ -107,11 +108,19 @@ class ScreenShot():
         try:
             self.logger.debug(f"상품페이지 항목을 찾는중...({self.num}회)")
             self.driver.switch_to.default_content()
-            self.driver.find_element(By.XPATH, f'//*[@id="INTRODUCE"]/div/div[{self.num}]/div/div/button').click()
-            self.logger.debug("상품페이지 항목을 찾는데 성공했습니다.")
+            a = self.driver.find_element(By.CLASS_NAME, f'_4Ep1KSMkqG')
+            b = self.driver.find_element(By.XPATH, f'//*[@id="INTRODUCE"]/div/div[{self.num}]/div/div/button')
+            self.logger.debug(a)
+            self.logger.debug(b)
+
+            if a == b:
+                a.click()
+                self.find_flag = True
+                self.logger.debug("상품페이지 항목을 찾는데 성공했습니다.")
+            else:
+                self.num += 1
         except:
             self.num += 1
-            self.click_more_button()
             pass
 
     def find_goods_img(self):
@@ -135,6 +144,7 @@ class ScreenShot():
                 return
             self.logger.debug(f"공지사항이 없는 것으로 확인되었습니다.")
         except:
+            self.num += 1
             self.find_goods_img()
 
     # 공지사항 있는 경우
@@ -195,7 +205,9 @@ class ScreenShot():
         time.sleep(1.5)
 
         self.remove_floating_tab()
-        self.click_more_button()
+
+        while self.find_flag == False:
+            self.click_more_button()
 
         self.logger.debug("캡쳐 준비 완료")
 
